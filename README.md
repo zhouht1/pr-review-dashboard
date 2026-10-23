@@ -1,9 +1,11 @@
 # PR Review Dashboard
 
-A lightweight, open-source dashboard that helps developers and teams prioritize open GitHub pull requests across multiple repositories.
+[English](./README.md) · [中文](./README.zh.md)
 
 ![CI](https://github.com/zhouht1/pr-review-dashboard/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+A lightweight, open-source dashboard that helps developers and teams prioritize open GitHub pull requests across multiple repositories.
 
 ## Why
 
