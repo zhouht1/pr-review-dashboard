@@ -1,6 +1,9 @@
 # PR Review Dashboard
 
-[English](./README.md) · [中文](./README.zh.md)
+<p align="center">
+  <a href="./README.md">English</a> ·
+  <b>简体中文</b>
+</p>
 
 ![CI](https://github.com/zhouht1/pr-review-dashboard/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
