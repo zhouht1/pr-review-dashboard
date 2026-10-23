@@ -1,8 +1,7 @@
 # PR Review Dashboard
 
 <p align="center">
-  <a href="./README.md"><b>English</b></a> ·
-  <a href="./README.zh.md">简体中文</a>
+  <b>English</b> · <a href="./README.zh.md">简体中文</a> · <a href="./README.zh-TW.md">繁體中文</a> · <a href="./README.ja.md">日本語</a> · <a href="./README.ko.md">한국어</a> · <a href="./README.tr.md">Türkçe</a> · <a href="./README.ru.md">Русский</a> · <a href="./README.vi.md">Tiếng Việt</a> · <a href="./README.th.md">ไทย</a> · <a href="./README.de.md">Deutsch</a> · <a href="./README.es.md">Español</a> · <a href="./README.fr.md">Français</a> · <a href="./README.uk.md">Українська</a> · <a href="./README.pl.md">Polski</a> · <a href="./README.pt-BR.md">Português (Brasil)</a> · <a href="./README.fa.md">فارسی</a> · <a href="./README.ar.md">العربية</a> · <a href="./README.id.md">Bahasa Indonesia</a> · <a href="./README.it.md">Italiano</a> · <a href="./README.el.md">Ελληνικά</a> · <a href="./README.ml.md">മലയാളം</a>
 </p>
 
 ![CI](https://github.com/zhouht1/pr-review-dashboard/actions/workflows/ci.yml/badge.svg)
@@ -44,8 +43,6 @@ Go to **GitHub → Settings → Developer settings → Personal access tokens (f
 
 ### 3. Configure repos and token
 
-Copy the example env file and fill it in:
-
 ```bash
 cp .env.example .env.local
 ```
@@ -65,8 +62,6 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Priority scoring
 
-Each PR is scored on a 0–100+ scale. A higher score means it needs attention sooner.
-
 | Signal | Points |
 |---|---|
 | No activity ≥ 7 days | +45 |
@@ -81,32 +76,9 @@ Each PR is scored on a 0–100+ scale. A higher score means it needs attention s
 
 Scores map to four levels: **Critical** (≥70), **High** (≥45), **Normal** (≥20), **Low**.
 
-## Project structure
-
-```
-src/
-  lib/
-    priority.ts   # scoring + sorting logic
-    github.ts     # GitHub REST API client
-    mockData.ts   # demo data for local development
-  components/
-    PRCard.tsx    # individual PR row
-    SortBar.tsx   # sort/filter controls
-    StatsHeader.tsx
-  types.ts
-  App.tsx
-  app.css
-  index.css
-```
-
 ## Contributing
 
 Issues and PRs are welcome. Please open an issue before starting large changes.
-
-1. Fork the repo
-2. Create a branch: `git checkout -b feat/your-feature`
-3. Commit your changes
-4. Open a pull request
 
 ## License
 

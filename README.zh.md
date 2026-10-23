@@ -1,8 +1,7 @@
 # PR Review Dashboard
 
 <p align="center">
-  <a href="./README.md">English</a> ·
-  <b>简体中文</b>
+  <a href="./README.md">English</a> · <b>简体中文</b> · <a href="./README.zh-TW.md">繁體中文</a> · <a href="./README.ja.md">日本語</a> · <a href="./README.ko.md">한국어</a> · <a href="./README.tr.md">Türkçe</a> · <a href="./README.ru.md">Русский</a> · <a href="./README.vi.md">Tiếng Việt</a> · <a href="./README.th.md">ไทย</a> · <a href="./README.de.md">Deutsch</a> · <a href="./README.es.md">Español</a> · <a href="./README.fr.md">Français</a> · <a href="./README.uk.md">Українська</a> · <a href="./README.pl.md">Polski</a> · <a href="./README.pt-BR.md">Português (Brasil)</a> · <a href="./README.fa.md">فارسی</a> · <a href="./README.ar.md">العربية</a> · <a href="./README.id.md">Bahasa Indonesia</a> · <a href="./README.it.md">Italiano</a> · <a href="./README.el.md">Ελληνικά</a> · <a href="./README.ml.md">മലയാളം</a>
 </p>
 
 ![CI](https://github.com/zhouht1/pr-review-dashboard/actions/workflows/ci.yml/badge.svg)
@@ -26,46 +25,16 @@
 
 ## 快速开始
 
-### 1. 克隆并安装依赖
-
 ```bash
 git clone https://github.com/zhouht1/pr-review-dashboard.git
 cd pr-review-dashboard
 npm install
-```
-
-### 2. 创建 GitHub Personal Access Token
-
-前往 **GitHub → Settings → Developer settings → Personal access tokens (fine-grained)**，创建一个具有以下**只读**权限的 Token：
-
-- Repository contents
-- Pull requests
-- Checks
-
-### 3. 配置仓库和 Token
-
-复制示例环境文件并填写：
-
-```bash
 cp .env.example .env.local
-```
-
-```
-VITE_GITHUB_TOKEN=ghp_your_token_here
-VITE_REPOS=owner/repo1,owner/repo2
-```
-
-### 4. 本地运行
-
-```bash
+# 编辑 .env.local，填入你的 token 和仓库列表
 npm run dev
 ```
 
-打开 [http://localhost:3000](http://localhost:3000)。
-
 ## 优先级评分机制
-
-每个 PR 的分数范围为 0–100+，分数越高表示越需要优先处理。
 
 | 信号 | 分值 |
 |---|---|
@@ -78,35 +47,6 @@ npm run dev
 | 已 Approved 但未合并 | +12 |
 | 超大 diff（>800 行） | +15 |
 | Draft PR | −40 |
-
-分数对应四个优先级：**Critical**（≥70）、**High**（≥45）、**Normal**（≥20）、**Low**。
-
-## 项目结构
-
-```
-src/
-  lib/
-    priority.ts   # 优先级评分与排序逻辑
-    github.ts     # GitHub REST API 客户端
-    mockData.ts   # 本地开发用 Demo 数据
-  components/
-    PRCard.tsx    # 单个 PR 卡片
-    SortBar.tsx   # 排序与过滤控件
-    StatsHeader.tsx
-  types.ts
-  App.tsx
-  app.css
-  index.css
-```
-
-## 参与贡献
-
-欢迎提 Issue 和 PR。较大的改动请先开 Issue 讨论。
-
-1. Fork 本仓库
-2. 创建分支：`git checkout -b feat/your-feature`
-3. 提交改动
-4. 发起 Pull Request
 
 ## License
 
