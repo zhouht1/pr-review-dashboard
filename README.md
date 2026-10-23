@@ -2,7 +2,7 @@
 
 A lightweight, open-source dashboard that helps developers and teams prioritize open GitHub pull requests across multiple repositories.
 
-![CI](https://github.com/YOUR_USERNAME/pr-review-dashboard/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/zhouht1/pr-review-dashboard/actions/workflows/ci.yml/badge.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
 ## Why
@@ -24,7 +24,7 @@ When you maintain several repositories, open PRs pile up fast. This dashboard su
 ### 1. Clone and install
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/pr-review-dashboard.git
+git clone https://github.com/zhouht1/pr-review-dashboard.git
 cd pr-review-dashboard
 npm install
 ```
